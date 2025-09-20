@@ -8,8 +8,8 @@ import static com.qualcomm.robotcore.hardware.DcMotor.RunMode.STOP_AND_RESET_ENC
 import static org.firstinspires.ftc.teamcode.ODO.GoBildaPinpointDriver.EncoderDirection.FORWARD;
 import static org.firstinspires.ftc.teamcode.ODO.GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD;
 
-import com.acmerobotics.dashboard.FtcDashboard;
-import com.acmerobotics.dashboard.config.Config;
+//import com.acmerobotics.dashboard.FtcDashboard;
+//import com.acmerobotics.dashboard.config.Config;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
@@ -19,11 +19,11 @@ import org.firstinspires.ftc.teamcode.ODO.GoBildaPinpointDriver;
 import org.firstinspires.ftc.teamcode.Swerve.TheBestSwerve;
 import org.firstinspires.ftc.teamcode.Swerve.wpilib.geometry.Rotation2d;
 
-@Config
+//@Config
 @TeleOp(name = "Blue Bot Teleop")
 public class BlueBotTeleop extends LinearOpMode {
 
-  FtcDashboard dash = FtcDashboard.getInstance();
+//  FtcDashboard dash = FtcDashboard.getInstance();
 
   double slideSpeed = 80;
   GoBildaPinpointDriver odometry;
@@ -44,7 +44,7 @@ public class BlueBotTeleop extends LinearOpMode {
   public void runOpMode() throws InterruptedException {
 
     //if you want outputs on driver station comment out the line below
-    telemetry = dash.getTelemetry();
+//    telemetry = dash.getTelemetry();
 
     // Does this move the robot? not anymore but you need to init the wrist or press b to get it to go to the right position
     Mekanism mek = new Mekanism(this);
@@ -71,11 +71,11 @@ public class BlueBotTeleop extends LinearOpMode {
        */
       double right_joy_x = gamepad1.right_stick_x * -1.0;
 
-      amazingSwerve.swerveTheThing(left_joy_x, left_joy_y, right_joy_x);
+//      amazingSwerve.swerveTheThing(left_joy_x, left_joy_y, right_joy_x);
 
       //just in case auto get's screwed up
       if (gamepad1.b && gamepad1.a) {
-        amazingSwerve.odometry.resetHeading(new Rotation2d());
+//        amazingSwerve.odometry.resetHeading(new Rotation2d());
         sleep(250);
       }
 

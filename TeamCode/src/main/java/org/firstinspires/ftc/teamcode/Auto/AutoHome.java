@@ -13,9 +13,9 @@ public class AutoHome extends LinearOpMode {
   @Override
   public void runOpMode() throws InterruptedException {
     Mekanism mek = new Mekanism(this);
-    Swerve drivebase = new Swerve(this);
+//    Swerve drivebase = new Swerve(this);
 
-    drivebase.initGyro();
+//    drivebase.initGyro();
 
 
     waitForStart();

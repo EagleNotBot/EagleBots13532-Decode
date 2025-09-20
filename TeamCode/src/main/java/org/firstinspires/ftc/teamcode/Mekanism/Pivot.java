@@ -1,11 +1,11 @@
 package org.firstinspires.ftc.teamcode.Mekanism;
 
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.acmerobotics.dashboard.FtcDashboard;
+//import com.acmerobotics.dashboard.FtcDashboard;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 public class Pivot extends LinearOpMode {
-  FtcDashboard dashboard = FtcDashboard.getInstance();
+//  FtcDashboard dashboard = FtcDashboard.getInstance();
 
   DcMotor motor1;
 

@@ -14,7 +14,7 @@ import org.firstinspires.ftc.teamcode.Swerve.Swerve;
 @TeleOp(name = "CompBot TeleOp Swerve", group = "CompBot")
 public class CompBotTeleOp extends LinearOpMode {
 
-  Swerve swerve = new Swerve(this);
+//  Swerve swerve = new Swerve(this);
   Mekanism mek = new Mekanism(this);
 
   double wristAngle = 0, armX = 0, armY = 0;
@@ -36,8 +36,8 @@ public class CompBotTeleOp extends LinearOpMode {
     waitForStart();
     while (opModeIsActive()) {
 
-      swerve.teleopDrive(-gamepad1.left_stick_y, -gamepad1.left_stick_x, -gamepad1.right_stick_x);
-      swerve.periodic();
+//      swerve.teleopDrive(-gamepad1.left_stick_y, -gamepad1.left_stick_x, -gamepad1.right_stick_x);
+//      swerve.periodic();
       telemetry.update();
 
       // Wrist one way
@@ -60,15 +60,15 @@ public class CompBotTeleOp extends LinearOpMode {
         armY += -Math.pow(gamepad2.left_stick_y, 3);
       } else armYTimer.reset();
 
-      mek.wristAngle(wristAngle);
-      mek.moveXY(armX, armY);
+//      mek.wristAngle(wristAngle);
+//      mek.moveXY(armX, armY);
 
       // If any input related to the mekanism is moved, cancel the auto movement
       if (gamepad2.dpad_up
           || gamepad2.dpad_down
           || gamepad2.left_stick_x != 0
           || gamepad2.left_stick_y != 0) {
-        mek.autoClipRun.set(false);
+//        mek.autoClipRun.set(false);
       }
     }
   }
