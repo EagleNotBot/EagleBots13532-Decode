@@ -1,0 +1,15 @@
+# Treat DrawIO files as text with LF line endings
+*.drawio text eol=lf merge=union
+
+# Ensure code files use LF line endings
+*.java text eol=lf
+*.kt text eol=lf
+
+# Treat image exports as binary
+*.png binary
+*.jpg binary
+*.pdf binary
+
+# Treat CAD files as binary
+*.stl binary
+*.step binary
