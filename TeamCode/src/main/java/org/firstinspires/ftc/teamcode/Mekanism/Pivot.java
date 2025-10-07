@@ -9,9 +9,7 @@ public class Pivot extends LinearOpMode {
 
   DcMotor motor1;
 
-
   @Override
-
   public void runOpMode() {
 
     motor1 = hardwareMap.get(DcMotor.class, "MrMotor");
