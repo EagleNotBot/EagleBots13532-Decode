@@ -9,6 +9,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
+
 import org.firstinspires.ftc.teamcode.ODO.GoBildaPinpointDriver;
 import org.firstinspires.ftc.teamcode.Utils;
 
@@ -162,11 +163,12 @@ public class AutoSwerve {
     //because br can't rotate to the right position to go straight
     if (z == 1)
       motorBR.setPower(pwr);
-    else
+    else {
       motorBR.setPower(pwr);
       motorBL.setPower(pwr);
       motorFL.setPower(pwr);
       motorFR.setPower(pwr);
+    }
   }
 
   public double set_Servo_Angle(AnalogInput analogInput, Servo servo, double desired_normalized_angle) {

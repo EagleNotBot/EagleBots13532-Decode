@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.VoltageSensor;
 
 @Autonomous(name = "output position")
-public class testVoltage extends LinearOpMode {
+public class  testVoltage extends LinearOpMode {
 
   @Override
   public void runOpMode() throws InterruptedException {
